@@ -1,0 +1,20 @@
+{
+  "name": "sms4free",
+  "version": "1.0.0",
+  "description": "Send SMS messages from your Node.js application using sms4free.co.il service",
+  "bin": {
+    "sms4free": "./bin/sms4free.js"
+  },
+  "main": "index.js",
+  "keywords": [
+    "sms",
+    "sms4free"
+  ],
+  "homepage": "https://github.com/siginur/sms4free",
+  "author": "Alexey Siginur <siginur@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siginur/sms4free.git"
+  },
+  "license": "MIT"
+}
