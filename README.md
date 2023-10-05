@@ -9,6 +9,12 @@ You can install this package using npm:
 npm install sms4free
 ```
 
+If you want to use the CLI, you can install it globally:
+
+```bash
+npm install -g sms4free
+```
+
 ## Usage
 
 To use sms4free, you need to require and create an instance of the class with your sms4free.co.il API credentials. Then, you can call its methods to send SMS messages and get the SMS balance.
@@ -68,6 +74,28 @@ Can be used when `throwOnBadResponse` is set to false and you want to handle the
 - code (Number): The response code from the API.
 
 Returns a String with the error message for the specified response code.
+
+## CLI
+
+```bash
+sms4free [command] [args]
+```
+
+### Commands
+- `balance`: Check your account balance.
+- `send`: Send an SMS message.
+
+### Arguments
+- `--key`: API key.
+- `--user`: User ID.
+- `--pass`: Password.
+- `--sender`: Sender name.
+- `--number`: Recipient phone number (required for the "send" command).
+- `--message`: SMS message (required for the "send" command).
+- `--options`: Path to a JSON configuration file.
+- `--help`: Show help.
+  
+> You can use `--key`, `--user`, `--pass`, `--sender` arguments or `--options` argument, but not both.
 
 ## License
 
